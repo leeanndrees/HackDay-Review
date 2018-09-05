@@ -13,6 +13,7 @@ class ReviewViewController: UIViewController {
     var questionCollection: [ReviewQuestion] = []
     var questionsToShow: [ReviewQuestion] = []
     let qb = QuestionBank()
+    var questionIndex = 0
 
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -41,15 +42,22 @@ class ReviewViewController: UIViewController {
     }
     
     func showQuestion() {
-        questionLabel.text = questionsToShow[0].question
+        questionLabel.text = questionsToShow[questionIndex].question
     }
     
     @IBAction func showAnswerButton(_ sender: UIButton) {
-        questionLabel.text = questionsToShow[0].answer
+        questionLabel.text = questionsToShow[questionIndex].answer
     }
     
     @IBAction func nextQuestionButton(_ sender: Any) {
-        showQuestion()
+        if questionIndex < questionsToShow.count - 1 {
+            questionIndex += 1
+            showQuestion()
+        }
+        else {
+            questionLabel.text = "Out of questions. Choose a new category!"
+            
+        }
     }
     
     
