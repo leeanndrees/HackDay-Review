@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nh6-BS-SQM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SRq-Gz-Qco">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,7 +40,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4V-59-oij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007.2" y="141.87192118226602"/>
+            <point key="canvasLocation" x="2949.5999999999999" y="141.87192118226602"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="hXh-Nb-Vin">
@@ -63,7 +63,7 @@
                                 <state key="normal" title="Show Answer"/>
                                 <connections>
                                     <action selector="showAnswerButton:" destination="7np-cj-yBv" eventType="touchUpInside" id="sTQ-GM-c0X"/>
-                                    <segue destination="T5G-zU-vnO" kind="presentation" modalTransitionStyle="flipHorizontal" id="1a1-RU-Gkf"/>
+                                    <segue destination="T5G-zU-vnO" kind="show" id="1a1-RU-Gkf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,12 +79,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSQ-MU-ubK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3090.4000000000001" y="141.87192118226602"/>
+            <point key="canvasLocation" x="4032.8000000000002" y="141.87192118226602"/>
         </scene>
-        <!--View Controller-->
+        <!--Answer View Controller-->
         <scene sceneID="N9B-wL-QLn">
             <objects>
-                <viewController id="T5G-zU-vnO" sceneMemberID="viewController">
+                <viewController id="T5G-zU-vnO" customClass="AnswerViewController" customModule="HackDay_ReviewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eoj-ln-cAs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +101,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="7np-cj-yBv" kind="show" id="0s3-aA-zc8"/>
+                                    <segue destination="7np-cj-yBv" kind="showDetail" id="0s3-aA-zc8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2X-aP-Aph">
+                                <rect key="frame" x="122" y="473" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Categories"/>
+                                <connections>
+                                    <segue destination="kZL-gV-dlj" kind="show" id="b1h-bz-HHK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,28 +119,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8E-5j-iqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3779" y="139"/>
+            <point key="canvasLocation" x="4720.8000000000002" y="138.91625615763547"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="lPV-wL-Y2s">
+        <scene sceneID="49M-RK-CCM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nh6-BS-SQM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kZL-gV-dlj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kct-pd-7IV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZNo-Hc-0hS">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SRq-Gz-Qco" kind="relationship" relationship="rootViewController" id="IXD-Dq-TVI"/>
+                        <segue destination="SRq-Gz-Qco" kind="relationship" relationship="rootViewController" id="D10-9T-d1X"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6e-Fj-Rro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RG-zg-we8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064.8" y="141.87192118226602"/>
+            <point key="canvasLocation" x="2007.2" y="141.87192118226602"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0s3-aA-zc8"/>
+        <segue reference="gVl-2k-VcY"/>
     </inferredMetricsTieBreakers>
 </document>
