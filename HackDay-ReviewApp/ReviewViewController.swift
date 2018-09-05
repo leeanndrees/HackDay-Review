@@ -45,7 +45,7 @@ class ReviewViewController: UIViewController {
     }
     
     @IBAction func showAnswerButton(_ sender: UIButton) {
-        
+        questionLabel.text = questionsToShow[0].answer
     }
     
 
