@@ -11,12 +11,14 @@ import Foundation
 struct QuestionBank {
     
     func generateQuestionBank() -> [ReviewQuestion] {
-        let q1 = ReviewQuestion(question: "Question 1", answer: "Question 1 Answer", category: "Week 1")
-        let q2 = ReviewQuestion(question: "Question 2", answer: "Question 2 Answer", category: "Week 2")
-        let q3 = ReviewQuestion(question: "Question 3", answer: "Question 3 Answer", category: "Week 3")
-        let q4 = ReviewQuestion(question: "Question 4", answer: "Question 4 Answer", category: "Week 1")
-        let q5 = ReviewQuestion(question: "Question 5", answer: "Question 5 Answer", category: "Week 2")
-        let q6 = ReviewQuestion(question: "Question 6", answer: "Question 6 Answer", category: "Week 3")
+        let q1 = ReviewQuestion(question: "What is a variable?", answer: "A box that holds stuff", category: "Week 1")
+        let q4 = ReviewQuestion(question: "What does a single equals sign mean in programming?", answer: "It's an assignment operator", category: "Week 1")
+        
+        let q2 = ReviewQuestion(question: "What is the difference between an array and a dictionary?", answer: "Array is ordered; dictionary is unordered", category: "Week 2")
+        let q5 = ReviewQuestion(question: "What is the purpose of a loop in programming?", answer: "Repeat a piece of code until a condition is met", category: "Week 2")
+        
+        let q3 = ReviewQuestion(question: "What is an optional in Swift programming?", answer: "A 'box' that might or might not have something in it", category: "Week 3")
+        let q6 = ReviewQuestion(question: "What happens if you try to force unwrap an optional that doesn't have a value?", answer: "💣💣💥😱😭", category: "Week 3")
         
         var tempQuestions: [ReviewQuestion] = []
         
