@@ -15,13 +15,13 @@ struct QuestionBank {
         let q2 = ReviewQuestion(question: "Question 2", answer: "Question 2 Answer")
         let q3 = ReviewQuestion(question: "Question 3", answer: "Question 3 Answer")
         
-        var questions: [ReviewQuestion] = []
+        var tempQuestions: [ReviewQuestion] = []
         
-        questions.append(q1)
-        questions.append(q2)
-        questions.append(q3)
+        tempQuestions.append(q1)
+        tempQuestions.append(q2)
+        tempQuestions.append(q3)
         
-        return questions
+        return tempQuestions
     }
     
 }

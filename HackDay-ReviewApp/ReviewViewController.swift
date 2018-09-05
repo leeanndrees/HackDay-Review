@@ -9,10 +9,15 @@
 import UIKit
 
 class ReviewViewController: UITableViewController {
+    
+    var questionsToShow: [ReviewQuestion] = []
+    let qb = QuestionBank()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        questionsToShow = qb.generateQuestionBank()
+        print(questionsToShow)
     }
 
     override func didReceiveMemoryWarning() {
