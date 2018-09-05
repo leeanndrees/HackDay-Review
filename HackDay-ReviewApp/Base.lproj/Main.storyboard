@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Choose Category-->
+        <!--Categories-->
         <scene sceneID="PU8-7C-nvI">
             <objects>
                 <tableViewController id="SRq-Gz-Qco" customClass="CategoryViewController" customModule="HackDay_ReviewApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,9 @@
                             <outlet property="delegate" destination="SRq-Gz-Qco" id="bze-PK-4Ef"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Choose Category" id="ZVb-3n-p7Y"/>
+                    <navigationItem key="navigationItem" title="Categories" id="ZVb-3n-p7Y">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="p0F-9D-YxZ"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="7np-cj-yBv" kind="show" identifier="ReviewQuestions" id="gVl-2k-VcY"/>
                     </connections>
@@ -42,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="2949.5999999999999" y="141.87192118226602"/>
         </scene>
-        <!--Review View Controller-->
+        <!--Review-->
         <scene sceneID="hXh-Nb-Vin">
             <objects>
                 <viewController id="7np-cj-yBv" customClass="ReviewViewController" customModule="HackDay_ReviewApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,9 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="efM-VY-9Vj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="p3D-ez-uE3">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Ru7-dK-Cqp"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Review" largeTitleDisplayMode="never" id="p3D-ez-uE3"/>
                     <connections>
                         <outlet property="nextQuestion" destination="Ykw-wc-tBz" id="xU9-6M-Gzg"/>
                         <outlet property="questionLabel" destination="CKt-98-iFf" id="dcl-Vl-TCN"/>
