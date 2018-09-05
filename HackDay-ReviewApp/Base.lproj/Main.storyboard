@@ -81,7 +81,9 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ru7-dK-Cqp"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="nextQuestion" destination="Ykw-wc-tBz" id="xU9-6M-Gzg"/>
                         <outlet property="questionLabel" destination="CKt-98-iFf" id="dcl-Vl-TCN"/>
+                        <outlet property="showAnswer" destination="ZYf-yC-bVj" id="tIx-TV-Qa6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSQ-MU-ubK" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,8 @@ class ReviewViewController: UIViewController {
     var questionIndex = 0
 
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var showAnswer: UIButton!
+    @IBOutlet weak var nextQuestion: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +58,8 @@ class ReviewViewController: UIViewController {
         }
         else {
             questionLabel.text = "Out of questions. Choose a new category!"
-            
+            showAnswer.isEnabled = false
+            nextQuestion.isEnabled = false
         }
     }
     
