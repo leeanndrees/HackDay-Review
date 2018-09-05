@@ -12,8 +12,8 @@ struct QuestionBank {
     
     func generateQuestionBank() -> [ReviewQuestion] {
         let q1 = ReviewQuestion(question: "Question 1", answer: "Question 1 Answer", category: "Week 1")
-        let q2 = ReviewQuestion(question: "Question 2", answer: "Question 2 Answer", category: "Week 1")
-        let q3 = ReviewQuestion(question: "Question 3", answer: "Question 3 Answer", category: "Week 1")
+        let q2 = ReviewQuestion(question: "Question 2", answer: "Question 2 Answer", category: "Week 2")
+        let q3 = ReviewQuestion(question: "Question 3", answer: "Question 3 Answer", category: "Week 3")
         
         var tempQuestions: [ReviewQuestion] = []
         

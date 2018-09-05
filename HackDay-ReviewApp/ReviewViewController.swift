@@ -27,6 +27,19 @@ class ReviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func getQuestionsByCategory(category: String) -> [ReviewQuestion] {
+        var questionsInCategory: [ReviewQuestion] = []
+        
+        for item in questionsToShow {
+            if item.category == category {
+                questionsInCategory.append(item)
+            }
+        }
+        
+        print(questionsInCategory)
+        return questionsInCategory
+    }
+    
     func showQuestion() {
         questionLabel.text = questionsToShow[0].question
     }
