@@ -64,6 +64,7 @@
 			children = (
 				43A83FB92140113E0078DE4B /* AppDelegate.swift */,
 				43A83FBB2140113E0078DE4B /* ReviewViewController.swift */,
+				43A7278F214019DA002B022E /* CategoryViewController.swift */,
 				43A83FBD2140113E0078DE4B /* Main.storyboard */,
 				43A83FC02140113E0078DE4B /* Assets.xcassets */,
 				43A83FC22140113E0078DE4B /* LaunchScreen.storyboard */,
@@ -71,7 +72,6 @@
 				43A83FCB214015A80078DE4B /* ReviewQuestion.swift */,
 				43A83FCD214016050078DE4B /* QuestionBank.swift */,
 				43A7279121401BA6002B022E /* CategoryBank.swift */,
-				43A7278F214019DA002B022E /* CategoryViewController.swift */,
 			);
 			path = "HackDay-ReviewApp";
 			sourceTree = "<group>";
