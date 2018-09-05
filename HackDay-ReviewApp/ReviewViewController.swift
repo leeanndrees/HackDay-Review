@@ -48,6 +48,11 @@ class ReviewViewController: UIViewController {
         questionLabel.text = questionsToShow[0].answer
     }
     
+    @IBAction func nextQuestionButton(_ sender: Any) {
+        showQuestion()
+    }
+    
+    
 
 
 }
