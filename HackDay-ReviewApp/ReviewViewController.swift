@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReviewViewController: UITableViewController {
+class ReviewViewController: UIViewController {
     
     var questionsToShow: [ReviewQuestion] = []
     let qb = QuestionBank()

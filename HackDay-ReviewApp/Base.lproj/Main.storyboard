@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Review View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="PU8-7C-nvI">
             <objects>
-                <tableViewController id="SRq-Gz-Qco" customClass="ReviewViewController" customModule="HackDay_ReviewApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="SRq-Gz-Qco" customClass="CategoryViewController" customModule="HackDay_ReviewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jhW-fa-VOq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +38,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4V-59-oij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="141.87192118226602"/>
+        </scene>
+        <!--Review View Controller-->
+        <scene sceneID="hXh-Nb-Vin">
+            <objects>
+                <viewController id="7np-cj-yBv" customClass="ReviewViewController" customModule="HackDay_ReviewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ihu-C0-u0h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="efM-VY-9Vj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSQ-MU-ubK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898" y="142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XPO-xq-asz">

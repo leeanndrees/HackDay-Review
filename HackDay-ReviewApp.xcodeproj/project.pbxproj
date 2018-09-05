@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A72790214019DA002B022E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7278F214019DA002B022E /* CategoryViewController.swift */; };
 		43A83FBA2140113E0078DE4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A83FB92140113E0078DE4B /* AppDelegate.swift */; };
 		43A83FBC2140113E0078DE4B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A83FBB2140113E0078DE4B /* ReviewViewController.swift */; };
 		43A83FBF2140113E0078DE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A83FBD2140113E0078DE4B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43A7278F214019DA002B022E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		43A83FB62140113E0078DE4B /* HackDay-ReviewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackDay-ReviewApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A83FB92140113E0078DE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A83FBB2140113E0078DE4B /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				43A83FC52140113E0078DE4B /* Info.plist */,
 				43A83FCB214015A80078DE4B /* ReviewQuestion.swift */,
 				43A83FCD214016050078DE4B /* QuestionBank.swift */,
+				43A7278F214019DA002B022E /* CategoryViewController.swift */,
 			);
 			path = "HackDay-ReviewApp";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A72790214019DA002B022E /* CategoryViewController.swift in Sources */,
 				43A83FBC2140113E0078DE4B /* ReviewViewController.swift in Sources */,
 				43A83FCE214016050078DE4B /* QuestionBank.swift in Sources */,
 				43A83FCC214015A80078DE4B /* ReviewQuestion.swift in Sources */,
