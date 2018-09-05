@@ -13,6 +13,7 @@
 		43A83FC12140113E0078DE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A83FC02140113E0078DE4B /* Assets.xcassets */; };
 		43A83FC42140113E0078DE4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A83FC22140113E0078DE4B /* LaunchScreen.storyboard */; };
 		43A83FCC214015A80078DE4B /* ReviewQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A83FCB214015A80078DE4B /* ReviewQuestion.swift */; };
+		43A83FCE214016050078DE4B /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A83FCD214016050078DE4B /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		43A83FC32140113E0078DE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43A83FC52140113E0078DE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A83FCB214015A80078DE4B /* ReviewQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewQuestion.swift; sourceTree = "<group>"; };
+		43A83FCD214016050078DE4B /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				43A83FC22140113E0078DE4B /* LaunchScreen.storyboard */,
 				43A83FC52140113E0078DE4B /* Info.plist */,
 				43A83FCB214015A80078DE4B /* ReviewQuestion.swift */,
+				43A83FCD214016050078DE4B /* QuestionBank.swift */,
 			);
 			path = "HackDay-ReviewApp";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A83FBC2140113E0078DE4B /* ReviewViewController.swift in Sources */,
+				43A83FCE214016050078DE4B /* QuestionBank.swift in Sources */,
 				43A83FCC214015A80078DE4B /* ReviewQuestion.swift in Sources */,
 				43A83FBA2140113E0078DE4B /* AppDelegate.swift in Sources */,
 			);
