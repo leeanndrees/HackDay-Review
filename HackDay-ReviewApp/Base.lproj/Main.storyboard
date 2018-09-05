@@ -49,12 +49,24 @@
                     <view key="view" contentMode="scaleToFill" id="Ihu-C0-u0h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKt-98-iFf">
+                                <rect key="frame" x="16" y="154" width="343" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="efM-VY-9Vj"/>
                     </view>
                     <navigationItem key="navigationItem" id="p3D-ez-uE3">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ru7-dK-Cqp"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="questionLabel" destination="CKt-98-iFf" id="dcl-Vl-TCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSQ-MU-ubK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
