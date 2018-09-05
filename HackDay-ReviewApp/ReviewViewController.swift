@@ -13,7 +13,6 @@ class ReviewViewController: UIViewController {
     var questionCollection: [ReviewQuestion] = []
     var questionsToShow: [ReviewQuestion] = []
     let qb = QuestionBank()
-    //let category = CategoryViewController()
 
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -21,9 +20,8 @@ class ReviewViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         questionCollection = qb.generateQuestionBank()
-        showQuestion()
         questionsToShow = getQuestionsByCategory(category: CategoryViewController.tappedCategory)
-        print(questionsToShow)
+        showQuestion()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +41,7 @@ class ReviewViewController: UIViewController {
     }
     
     func showQuestion() {
-        questionLabel.text = questionCollection[0].question
+        questionLabel.text = questionsToShow[0].question
     }
 
 
