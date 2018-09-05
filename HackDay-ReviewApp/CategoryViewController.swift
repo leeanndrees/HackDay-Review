@@ -11,6 +11,8 @@ import UIKit
 class CategoryViewController: UITableViewController {
     
     let cb = CategoryBank()
+    var index: Int = 0
+    static var tappedCategory: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,16 @@ class CategoryViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
+        index = indexPath.row
+        
+        CategoryViewController.tappedCategory = saveTappedCategory(index: index)
+        
         performSegue(withIdentifier: "ReviewQuestions", sender: self)
+        
+    }
+    
+    func saveTappedCategory(index: Int) -> String {
+        return cb.categories[index]
         
     }
 }
