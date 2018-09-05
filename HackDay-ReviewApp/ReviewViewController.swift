@@ -17,7 +17,6 @@ class ReviewViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         questionsToShow = qb.generateQuestionBank()
-        print(questionsToShow)
     }
 
     override func didReceiveMemoryWarning() {

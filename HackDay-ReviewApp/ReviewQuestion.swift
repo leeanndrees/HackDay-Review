@@ -12,5 +12,6 @@ struct ReviewQuestion {
     
     let question: String
     let answer: String
+    let category: String
     
 }
